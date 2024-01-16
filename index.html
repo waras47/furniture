@@ -18,7 +18,7 @@
 <body>
     <!-----Header Nav Bar Starts-->
     <nav class="navbar">
-        <div class="brand-title">Panto</div>
+        <div class="brand-title">Hartati Mebel</div>
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -26,13 +26,14 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li>Furniture</li>
+                <a href="#product"><li>Product</li></a>
                 <li>Shop</li>
                 <li>About Us</li>
-                <li>Contact</li>
+                <a href="#testimoni"><li>Testimoni</li></a>
+                <a href="#contact"><li>Contact</li></a>
             </ul>
         </div>
-        <div><i class="fa fa-shopping-cart" aria-hidden="true"></i> </div>
+        <!-- <div><i class="fa fa-shopping-cart" aria-hidden="true"></i> </div> -->
     </nav>
     <!-----Header Nav Bar Ends Here-->
 
@@ -96,14 +97,15 @@
         </div>
         <!----Why Choose Us Section Ends-->
 
+        <div id="product"></div>
         <!--Product Slider Section Starts-->
         <div class="product-slider" id="product-slider">
             <div class="product-slider-title" id="product-slider-title">
                 Best Selling Product
             </div>
-            <div class="tabs" id="tabs">
+            <!-- <div class="tabs" id="tabs">
 
-            </div>
+            </div> -->
             <div class="glider-contain">
                 <div class="glider">
                     <div class="product-card" id="product-card">
@@ -389,13 +391,16 @@
 
                 </div>
             </div>
+            <div id="testimoni"></div>
         </div>
 
         <!---Materials Section Ends-->
 
         <!----Testimonials Section Starts-->
+        
         <div class="testimonial" id="testimonial">
             <div class="testimonial-orange-title" id="testimonial-orange">
+                
                 testimonials
             </div>
             <div class="testimonial-black-title" id="testi-title">
@@ -600,17 +605,28 @@
     <script src="./js/owl-script.js"></script>
 
 
-    <!----Testimonial JavaScript Code Ends-->
-
+    
     <!-----Footer Section stars here-->
     <footer>
         <section>
             <div class="footer-bar" id="footer-bar">
                 <div class="col1" id="logo-text">
-                    <h1>Panto</h1>
-                    <p>The advantage of hiring a workspace with <br> us is that givees you comfortable service <br> and
-                        all-around
-                        facilities.
+                    <h1 id="contact">Hartati Mebel</h1>
+                    <p class="footer-text-list">
+                        <span><i class="fa fa-map-marker">&nbsp;&nbsp;</i></span>
+                        <span>Alamat</span>
+                    </p>
+                    <p class="footer-text-list">
+                        <span><i class="fa fa-envelope-o">&nbsp;&nbsp;</i></span>
+                        <span>Email</span>
+                    </p>
+                    <p class="footer-text-list">
+                        <span><i class="fa fa-phone"></i>&nbsp;</span>
+                        <span>Telpon</span>
+                    </p>
+                    <p class="footer-text-list">
+                        <span><i class="fa fa-whatsapp"></i>&nbsp;&nbsp;</span>
+                        <span>whatsapp</span>
                     </p>
                 </div>
                 <div class="col2" id="services">

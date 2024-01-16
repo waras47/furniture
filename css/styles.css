@@ -1,24 +1,32 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-
     margin: 0;
-
-
 }
-
+/* navbar */
 .navbar {
     top: 7%;
     background-color: transparent;
     display: flex;
-    width: 90%;
-    margin: auto 5%;
+    width: 100%;
+    margin: auto 0;
     justify-content: space-between;
     overflow: hidden;
     align-items: center;
     position: absolute;
+    z-index: 100;
+    transition: background-color 0.3s ease; 
+}
+
+.navbar.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(23, 23, 23); /* Ganti warna latar belakang sesuai kebutuhan Anda */
+    /* Tambahkan style lain yang diperlukan untuk navbar yang di-scroll */
 }
 
 .toggle-button {
@@ -46,16 +54,18 @@ body {
     font-size: 28px;
     color: #fff;
     font-family: 'gilroy-bold';
+    margin-left: 75px;
 }
 
 .navbar .navbar-links ul li {
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'gilroy-light';
     color: #fff;
     justify-content: space-between;
     padding: 0px 20px;
-    font-weight: 100;
+    font-weight: 200;
+    margin-right: 10px;
 }
 
 .fa-shopping-cart {
@@ -684,7 +694,7 @@ input::placeholder {
 }
 
 footer {
-    margin-top: 11%;
+    margin-top: 10%;
     height: 462px;
     background-color: #f7f7f7;
     padding: 10% 10% 3% 13%;
@@ -697,6 +707,7 @@ footer {
 
 .col1 {
     width: 40%;
+    margin-top: -26px;
 }
 
 .col2 {
